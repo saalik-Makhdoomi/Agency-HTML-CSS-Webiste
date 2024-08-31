@@ -1,0 +1,263 @@
+:root{
+    --primary: #3482FF;
+    --secondary: #F89E52;
+    --headings: #0B0B0B;
+    --text:#888888;
+}
+
+
+
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../resources/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../resources/fonts/Poppins-Bold.ttf);
+}
+
+
+*{
+    font-family: Poppins-Regular;
+    border: 1px solid red; 
+}
+
+p{
+    color: var(--primary);
+}
+
+/* header and navigation bar settings */
+.logo{
+    height:8%;
+}
+
+
+header{
+    margin: 0px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header div{
+    display: inline-block;
+    /* border: 1px solid black; */
+    
+    
+}
+
+
+
+
+/* first 2 divs */
+section{
+   margin: 0px 8%;
+   /* display: flex; */
+   justify-content: space-between;
+    border: 1px solid blue;
+}
+
+.hero-banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-banner div{
+    display: flex;
+    height: 80vh;
+    width: 40vw;
+}
+
+.hero-banner-imgDiv{
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-banner-img{
+   height: 72%;
+}
+
+.hero-banner-heading{
+    font-size: 90px;
+    line-height: 1.4em;
+    font-family: Poppins-Bold;
+    color: var(--headings);
+    margin: 0px;
+}
+
+.hero-banner-desc{
+    color: #9E9DA9;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-banner-contentside{
+    flex-direction:column;
+    justify-content: center;
+    /* align-items: end; */
+}
+
+
+.get-started-btn{
+        font-family: "Poppins", Sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background-color: var(--primary);
+        border-radius: 20px 20px 20px 20px;
+        padding: 28px 55px 28px 55px;
+        transition-duration: 400ms;
+    }
+
+    .get-started-btn:hover{
+        font-family: "Poppins", Sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background-color: var(--secondary);
+        border-radius: 20px 20px 20px 20px;
+        padding: 28px 55px 28px 55px;
+    }
+
+    .get-started-btnRound {
+        height: 65px;
+         width: 65px;
+        font-size: 16px;
+        color: white;
+        background-color: var(--secondary);
+        border: 0px;
+        border-radius: 100%;
+        margin-left: 4%;
+
+
+        animation-name: ripple-effect;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+
+
+        
+        /* }@keyframes ripple_effect {
+
+            0% {
+                box-shadow: 0px 0px 0px 2px #f89d52;
+        
+            }
+        
+            25% {
+                box-shadow: 0px 0px 0px 4px #f89d52ba;
+            }
+        
+            50% {
+                box-shadow: 0px 0px 0px 6px #f89d528e;
+            }
+        
+            75% {
+                box-shadow: 0px 0px 0px 8px #f89d525c;
+            }
+        
+            100% {
+                /* background-color: green; */
+                /* box-shadow: 0px 0px 0px 10px #f89d5221;
+         */
+            }
+        } */
+        
+
+   
+
+
+
+
+        @media screen and (max-width:575px) {
+            body{
+                margin: 0%;
+            }
+
+     section{
+        /* border: 1px solid blue; */
+        padding: 40px 0px;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        flex-direction: column;
+
+    }
+
+        .hero-banner div {
+            /* border: 1px solid rgb(255, 0, 0); */
+            /* display: flex; */
+            width: 100vw;
+            height: 50vh;
+    
+        }
+
+        .hero-banner-heading{
+            font-size: 26px;
+            line-height: 1.2em;
+            font-family: Poppins-Bold;
+            color: var(--headings);
+            margin: 0px;
+        }
+
+        .hero-banner-desc{
+            color: #9E9DA9;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        @media (min-width:576px) and (max-width:768px) {
+            .container{
+                width: 540px;;
+                height: 400px;
+                background-color:red;
+            }
+        }
+        
+        @media (min-width:769px) and (max-width:992px) {
+            .container{
+                width: 720px;;
+                height: 400px;
+                background-color:yellow;
+            }
+        }
+        
+        @media (min-width:993px) and (max-width:1200px) {
+            .container{
+                width: 960px;
+                height: 400px;
+                background-color:blueviolet;
+            }
+        }
+        
+        @media (min-width:1201px) and (max-width:1400px) {
+            .container{
+                width: 1140px;
+                height: 400px;
+                background-color: blue;
+            }
+        }
+        
+        @media (min-width: 1401px){
+        .container{
+            width: 1320px;
+            height: 400px;
+            background-color:green;
+        }
+        }

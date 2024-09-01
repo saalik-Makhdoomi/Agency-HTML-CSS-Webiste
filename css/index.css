@@ -164,19 +164,21 @@ section{
                 /* background-color: green; */
                 /* box-shadow: 0px 0px 0px 10px #f89d5221;
          */
-            }
-        } */
+    }
+         */
         
 
    
 
 
 
-
-        @media screen and (max-width:575px) {
-            body{
-                margin: 0%;
+{
+         @media screen and (max-width: 575px) {
+            body {
+                margin: 0;
             }
+        }
+        
 
      section{
         /* border: 1px solid blue; */
@@ -260,4 +262,5 @@ section{
             height: 400px;
             background-color:green;
         }
-        }
+    }
+}
